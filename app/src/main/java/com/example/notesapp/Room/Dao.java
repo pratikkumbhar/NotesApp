@@ -1,5 +1,6 @@
 package com.example.notesapp.Room;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
@@ -10,7 +11,15 @@ import java.util.List;
 public interface Dao {
 
     @Query("SELECT * FROM user_table ")
-    List<Entity> getallNotes();
+    LiveData<List<Entity>>  getallNotes();
+
+    @Query("SELECT * FROM user_table ORDER BY priority DESC")
+    LiveData<List<Entity>>  gethightolow();
+
+
+    @Query("SELECT * FROM user_table ORDER BY priority ASC")
+    LiveData<List<Entity>>  getlowtohigh();
+
 
     @Insert
     void insertNotes(Entity entity);

@@ -1,68 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:padding="7dp"
-    android:layout_height="wrap_content">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_weight="2"
+    android:layout_height="match_parent">
 
-    >
-    <TextView
-        android:id="@+id/container_titile"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Title"
-        android:fontFamily="@font/baloo_bhai"
-        android:layout_weight="1"
-        android:textColor="#515151"
-        android:padding="5dp"
-        android:textSize="24dp"
-        android:layout_marginRight="30dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_weight="1"
-        android:layout_height="25dp"
-        android:background="@drawable/priority1"
+        android:layout_margin="5dp"
+        android:background="@drawable/edittext_background"
+        android:orientation="vertical"
+        android:padding="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</LinearLayout>
-
-    <TextView
-        android:id="@+id/container_notes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="notes"
-        android:padding="5dp"
-        android:fontFamily="@font/baloo_bhai"
-
-        android:textSize="20dp"
-        android:textColor="#717171"
-        app:layout_constraintTop_toBottomOf="@+id/container_titile"
-        tools:layout_editor_absoluteX="16dp"></TextView>
-    <TextView
-        android:id="@+id/contaienr_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="22/1/2021"
-        android:layout_weight="1"
-        android:textColor="#454545"
-        android:padding="5dp"
-        android:textSize="20dp"
-        android:layout_marginRight="30dp"
-        android:fontFamily="@font/baloo_bhai"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
-</LinearLayout>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+            >
+
+            <TextView
+                android:id="@+id/container_titile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/baloo_bhai"
+                android:padding="5dp"
+                android:text="Title"
+                android:textColor="#4E4B4B"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <ImageView
+                android:id="@+id/container_imageView"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/priority1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/container_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bhai"
+            android:padding="5dp"
+            android:text="notes"
+            android:textStyle="normal"
+            android:textColor="#5A5A5A"
+            android:textSize="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/container_titile"
+            tools:layout_editor_absoluteX="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/contaienr_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/baloo_bhai"
+            android:padding="5dp"
+            android:text="22/1/2021"
+            android:textColor="#7A7A7A"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:id="@+id/buttom_sheet"
+
+    android:layout_height="wrap_content">
+<View
+    android:layout_width="100dp"
+    android:layout_height="5dp"
+    android:background="@drawable/delete_alert_strip"
+    android:layout_margin="7dp"
+    ></View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are You Want to Delete this Note ?"
+        android:textColor="#272727"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:fontFamily="@font/bungee"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:textSize="24dp"
+       android:textColor="#272727"
+        android:fontFamily="@font/baloo_bhai"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/delete_no"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@drawable/delete_nobutton"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/delete_yes"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/delete_yesbutton"
+        ></TextView>
+
+</LinearLayout>

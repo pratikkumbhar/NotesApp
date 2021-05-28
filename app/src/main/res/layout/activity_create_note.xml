@@ -1,78 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E8E8E8"
 
-
-    android:orientation="vertical"
     tools:context=".CreateNoteActivity">
-<com.google.android.material.appbar.AppBarLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/toolbar"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </androidx.appcompat.widget.Toolbar>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo_bhai"
-            android:text="Create"
-            android:textSize="30dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:id="@+id/saveNotesButton"
-            android:layout_marginRight="5dp"
-            android:src="@drawable/save_icon"
-            app:layout_constraintEnd_toEndOf="@+id/toolbar"
-            app:layout_constraintTop_toTopOf="parent"></ImageView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</com.google.android.material.appbar.AppBarLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="7dp"
+      android:orientation="vertical">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Title"
+        android:textColorHint="#838383"
         android:textStyle="bold"
         android:id="@+id/title_edittext"
         android:textSize="26dp"
+        android:textColor="#373737"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="5dp"
-        android:paddingLeft="10dp"
-        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
         android:background="@drawable/edittext_background"></EditText>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Subtitle"
         android:textStyle="bold"
+        android:textColorHint="#838383"
         android:textSize="26dp"
-        android:padding="6dp"
+        android:textColor="#373737"
+       android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
         android:id="@+id/subtitle_edittext"
-        android:paddingLeft="10dp"
+
         android:background="@drawable/edittext_background"></EditText>
 
 
@@ -99,6 +68,7 @@
         android:layout_marginRight="15dp"
         android:background="@drawable/priority1"
         android:id="@+id/priority1_selcted"
+        android:src="@drawable/proritydone_icon"
         ></ImageView>
     <ImageView
         android:layout_width="30dp"
@@ -106,7 +76,7 @@
         android:layout_height="30dp"
         android:background="@drawable/proiority_2"
         android:id="@+id/priority2_selcted"
-        android:src="@drawable/proritydone_icon"
+
         ></ImageView>
     <ImageView
         android:layout_width="30dp"
@@ -132,10 +102,40 @@
         android:gravity="top"
         android:textStyle="bold"
         android:textSize="26dp"
-        android:layout_marginBottom="10dp"
+        android:textColorHint="#838383"
+        android:layout_marginBottom="100dp"
         android:layout_marginTop="5dp"
-        android:paddingLeft="10dp"
+        android:textColor="#373737"
         android:id="@+id/notes_edittext"
-        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
         android:background="@drawable/edittext_background"></EditText>
-</LinearLayout>
+  </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F17DA5"
+
+        android:src="@drawable/save_icon"
+        android:id="@+id/savebutton"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF4848"
+        android:visibility="gone"
+        android:src="@drawable/delete_icon"
+        android:id="@+id/deletebutton"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
