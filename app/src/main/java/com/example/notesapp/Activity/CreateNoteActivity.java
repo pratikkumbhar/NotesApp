@@ -1,4 +1,4 @@
-package com.example.notesapp;
+package com.example.notesapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 import android.text.format.DateFormat;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -15,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.notesapp.R;
 import com.example.notesapp.Room.Entity;
 import com.example.notesapp.ViewModel.MyViewModel;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -28,6 +28,7 @@ ImageView priority1,priority2,priority3,priority4;
 String title,subtitle,notes;
 String utitle,usubtitle,unotes;
 int id;
+
 FloatingActionButton saveButton,deleteButton;
 Toolbar toolbar;
 String priority = "1";
@@ -253,6 +254,7 @@ boolean update = false;
         entity.notes = notes;
         entity.priority = priority;
         viewModel.insertnotes(entity);
+
         finish();
         Toast.makeText(this, "Note Creaeted", Toast.LENGTH_SHORT).show();
 

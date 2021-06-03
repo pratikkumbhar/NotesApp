@@ -45,10 +45,11 @@
 
             <ImageView
                 android:id="@+id/container_imageView"
-                android:layout_width="30dp"
+                android:layout_width="35dp"
                 android:layout_height="15dp"
                 android:layout_weight="1"
-
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
                 android:background="@drawable/priority1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

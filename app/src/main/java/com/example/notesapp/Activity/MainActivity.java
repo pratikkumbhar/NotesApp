@@ -1,10 +1,12 @@
-package com.example.notesapp;
+package com.example.notesapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.notesapp.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -72,5 +72,17 @@ public class Entity {
     public void setDate(String date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return "Entity{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", subtitle='" + subtitle + '\'' +
+                ", notes='" + notes + '\'' +
+                ", priority='" + priority + '\'' +
+                ", date='" + date + '\'' +
+                '}';
+    }
 }
 

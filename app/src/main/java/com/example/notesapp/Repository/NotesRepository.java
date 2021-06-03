@@ -33,6 +33,10 @@ public class NotesRepository {
           {
               notesDao.insertNotes(entity);
           }
+          public void insetAllNotes(List<Entity> entities)
+          {
+              notesDao.insertList(entities);
+          }
           public void deletenotes(int id)
           {
               notesDao.deleteNotes(id);
@@ -40,5 +44,8 @@ public class NotesRepository {
          public void updatenotes(Entity entity)
           {
               notesDao.updateNotes(entity);
+          }
+          public void deleteAllData(){
+              notesDao.deleteAllData();
           }
 }

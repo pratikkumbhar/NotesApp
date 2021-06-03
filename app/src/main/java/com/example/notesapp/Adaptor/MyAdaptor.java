@@ -11,8 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.notesapp.CreateNoteActivity;
-import com.example.notesapp.HomeActivity;
+import com.example.notesapp.Activity.CreateNoteActivity;
 import com.example.notesapp.R;
 import com.example.notesapp.Room.Entity;
 

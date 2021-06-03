@@ -31,6 +31,7 @@ public class MyViewModel extends AndroidViewModel {
     {
         repository.insertnotes(entity);
     }
+    public void insetAllnotes(List<Entity> entities){repository.insetAllNotes(entities);}
     public void deletenotes(int id)
     {
         repository.deletenotes(id);
@@ -38,5 +39,9 @@ public class MyViewModel extends AndroidViewModel {
     public void updatenotes(Entity entity)
     {
         repository.updatenotes(entity);
+    }
+    public void deleteAllData()
+    {
+        repository.deleteAllData();
     }
 }

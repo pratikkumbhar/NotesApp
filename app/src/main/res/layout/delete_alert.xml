@@ -5,7 +5,7 @@
     android:gravity="center"
 
     android:id="@+id/buttom_sheet"
-
+    android:background="@color/white"
     android:layout_height="wrap_content">
 <View
     android:layout_width="100dp"

@@ -6,7 +6,20 @@
     android:layout_height="match_parent"
     android:background="#E8E8E8"
     android:padding="0dp"
-    tools:context=".HomeActivity">
+    tools:context=".Activity.HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create note by clicking botton icon."
+        android:textColor="#222222"
+        android:textSize="20dp"
+        android:id="@+id/createnewnoteTextview"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mainliner"></TextView>
 
     <LinearLayout
         android:id="@+id/mainliner"
@@ -32,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No filter"
-            android:textSize="15dp"
+            android:textSize="13dp"
             android:id="@+id/nofilter"
             android:gravity="center"
             android:background="@drawable/filterselected_background"
@@ -49,7 +62,7 @@
         android:id="@+id/hightolow"
             android:layout_height="wrap_content"
             android:text="High to Low"
-            android:textSize="15dp"
+            android:textSize="13dp"
             android:gravity="center"
         android:paddingLeft="7dp"
         android:paddingTop="3dp"
@@ -66,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Low to High"
-            android:textSize="15dp"
+            android:textSize="13dp"
         android:id="@+id/lowtohigh"
             android:gravity="center"
             android:layout_gravity="center"
@@ -79,7 +92,21 @@
             android:background="@drawable/filtercontent_background"
             android:paddingRight="7dp"
             ></TextView>
+
+
     </LinearLayout>
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+
+        android:id="@+id/setting_button"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_baseline_settings_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 <androidx.appcompat.widget.SearchView
     android:layout_width="match_parent"
     android:layout_height="40dp"
@@ -108,7 +135,7 @@
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#F66D9C"
+        android:backgroundTint="#8E8E8E"
         android:src="@drawable/floting_icon"
         android:id="@+id/floting_button"
         android:layout_marginRight="30dp"
